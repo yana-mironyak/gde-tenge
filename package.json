@@ -1,0 +1,26 @@
+{
+  "name": "gde-tenge",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yana-mironyak/gde-tenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yana-mironyak/gde-tenge/issues"
+  },
+  "homepage": "https://github.com/yana-mironyak/gde-tenge#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "posthtml-include": "^1.7.4"
+  }
+}
