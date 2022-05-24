@@ -6,7 +6,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build src/*.html --public-url /gde-tenge.git/"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yana-mironyak/gde-tenge/issues"
+    "url": "https://yana-mironyak.github.io/gde-tenge/"
   },
   "homepage": "https://github.com/yana-mironyak/gde-tenge#readme",
   "devDependencies": {
