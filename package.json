@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://yana-mironyak.github.io/gde-tenge/"
   },
-  "homepage": "https://github.com/yana-mironyak/gde-tenge#readme",
+  "homepage": "https://github.com/yana-mironyak/gde-tenge",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
