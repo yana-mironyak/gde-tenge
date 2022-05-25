@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://yana-mironyak.github.io/gde-tenge/"
+    "url": "https://github.com/yana-mironyak/gde-tenge"
   },
-  "homepage": "https://github.com/yana-mironyak/gde-tenge",
+  "homepage": "https://yana-mironyak.github.io/gde-tenge/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
