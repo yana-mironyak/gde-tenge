@@ -6,7 +6,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/*.html --public-url /gde-tenge/"
+    "build": "parcel build src/*.html --public-url /gde-tenge/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "@parcel/transformer-sass": "^2.5.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
+    "gh-pages": "^4.0.0",
     "parcel": "^2.5.0",
     "posthtml-include": "^1.7.4"
   }

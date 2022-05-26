@@ -1,7 +1,10 @@
 .cards {
     padding-top: 20px; 
+    padding-bottom: 30px;
 
     &__item {
+        padding-left: 15px;
+        padding-right: 15px;
         margin-bottom: 15px;
         border-bottom: 1px solid;
     }
@@ -46,6 +49,10 @@
         line-height: 1.5;
         background-image: $button-bgd-color;
         color: $button-text-color;
+    }
+
+    &__button-link {
+        text-decoration: none;
     }
 }  
 
