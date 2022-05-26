@@ -1,5 +1,8 @@
 .header{
   padding-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  line-height: 1.3;
   
   &__logo{
     margin-bottom: 10px;
@@ -7,16 +10,20 @@
 
   &__title{
     padding-bottom: 10px;
+    
+    font-weight: 700;
+    font-size: 20px;
+    font-stretch: 100%;
+    color: $accent-text-color;
+  }
 
+  &__text {
+    padding-bottom: 10px;
+    
     border-bottom: 1px solid;
     border-color: $primary-border-color;
 
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    font-size: 23px;
-    font-stretch: 100%;
-    line-height: 1.3;
-    color: $primary-text-color;
+    font-size: 18px;
+
   }
 }
