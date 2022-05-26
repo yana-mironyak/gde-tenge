@@ -1,26 +1,20 @@
 .hero{
-  padding-top: 15px;
   padding-bottom: 10px;
 
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  color: $accent-text-color;
+  
 
   &__title{
-    width: 294px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 32px;
-  }
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
 
-  &__text{
     padding-bottom: 10px;
-    
-    line-height: 1.5;
-    font-size: 23px;
-    border-bottom: 2px solid $secondary-border-color;
+    border-bottom: 2px solid $primary-border-color;
   }
 }
