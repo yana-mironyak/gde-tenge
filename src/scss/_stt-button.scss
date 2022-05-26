@@ -15,6 +15,7 @@
   border: 2px solid #566FB8;
 
   color: #566FB8;
+  transition: opacity 500ms 0s linear;
 
   &__compact-up{
     width: 40px;
@@ -23,5 +24,6 @@
 
   &--hidden{
     opacity: 0;
+    pointer-events: none;
   }
 }
