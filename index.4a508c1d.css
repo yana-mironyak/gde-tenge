@@ -19,6 +19,10 @@ ul {
   list-style: none;
 }
 
+button {
+  border: 0;
+}
+
 .container {
   max-width: 375px;
   margin-left: auto;
@@ -114,6 +118,33 @@ ul {
 
 .cards__button-link {
   text-decoration: none;
+}
+
+.stt-button {
+  opacity: 1;
+  width: 65px;
+  height: 65px;
+  color: #566fb8;
+  background-color: #fff;
+  border: 2px solid #566fb8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .5s linear;
+  display: flex;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+}
+
+.stt-button__compact-up {
+  width: 40px;
+  height: 40px;
+}
+
+.stt-button--hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .footer {
