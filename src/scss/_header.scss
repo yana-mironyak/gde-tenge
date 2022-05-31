@@ -14,5 +14,9 @@
     font-weight: 700;
     font-size: 20px;
     color: $accent-text-color;
+
+    @include media('min', 'tablet'){
+      font-size: 26px;
+    }
   }
 }
