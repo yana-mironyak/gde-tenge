@@ -4,23 +4,58 @@
     color: $accent-text-color;
 
     &__list {
-        margin-bottom: 15px;
-        color: $primary-text-color;
-        font-size: 18px;
-        font-weight: 700;
+      color: $primary-text-color;
+      border-top: 4px solid $accent-text-color;
+      padding-top: 10px;
+      padding-bottom: 10px;
 
-        &:first-of-type {
-            border-top: 4px solid $accent-text-color;
-            padding-top: 10px;
+      @include media('min', 'tablet'){
+        display: flex;
+        justify-content: space-around;
+
+        text-align: center;
+      }
+    }
+    
+    &__item {
+      font-size: 18px;
+      font-weight: 700;
+
+      @include media('within', 'mobile'){
+        &:not(:last-child) {
+          margin-bottom: 15px;
         }
+      }
+
+      @include media('min', 'tablet'){
+        width: 176px;
+
+        font-size: 15px;
+        color: $footer-text-color;
+      }
     }
 
-    &__item {
-        padding-left: 18px;
-        padding-right: 18px;
+    &__sub-list{
+      padding-top: 5px;
 
-        font-size: 20px;
-        font-weight: 400;
+      @include media('within', 'mobile'){
+        margin-left: 18px;
+      }
+
+      @include media('min', 'tablet'){
+        padding-top: 30px;
+
+        text-align: center;
+      }
+    }
+
+    &__sub-item{
+      font-size: 20px;
+      font-weight: 400;
+
+      @include media('min', 'tablet'){
+        font-size: 16px;
+      }
     }
 
     &__text {

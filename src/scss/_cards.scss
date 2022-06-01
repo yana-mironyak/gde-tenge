@@ -2,25 +2,45 @@
     padding-top: 20px; 
     padding-bottom: 30px;
 
+    &__body{
+      @include media('min', 'descktop') {
+        display: flex;
+      }
+    }
+
+    &__sub-body{
+      flex-grow: 1;
+    }
+
     &__item {
-        padding-left: 15px;
-        padding-right: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-bottom: 1px solid;
+
+      &:not(:last-child){
         margin-bottom: 15px;
-        border-bottom: 1px solid;
+      }
     }
 
     &__logo {
-        margin-right: auto; 
-        margin-left: auto;
-        margin-bottom: 10px;
+      margin-right: auto; 
+      margin-left: auto;
+      margin-bottom: 10px;
     }
 
     &__title {
-        text-align: center;
-        margin-bottom: 20px;
+      margin-bottom: 20px;
 
-        font-family: 'Open Sans', sans-serif;
-        font-size: 21px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 21px;
+
+      @include media('max', 'descktop'){
+        text-align: center;
+      }
+
+      @include media('min', 'tablet'){
+        font-size: 30px;
+      }
     }
 
     &__info-wrap {
@@ -32,27 +52,42 @@
         line-height: 1.5;
     }
 
-    &__button {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 20px;
-        padding: 5px 15px;
-        border: 0;
-        border-radius: 7px;
-        box-shadow: 0px 2px 4px 1px rgba(186, 126, 194, 0.86);
-            -webkit-box-shadow: 0px 2px 4px 1px rgba(186, 126, 194, 0.86);
-            -moz-box-shadow: 0px 2px 4px 1px rgba(186, 126, 194, 0.86);
+    &__button-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        font-family: 'Open Sans', sans-serif;
-        font-size: 25px;
-        line-height: 1.5;
-        background-image: $button-bgd-color;
-        color: $button-text-color;
+      width: 130px;
+      height: 45px;
+      margin-left: auto;
+      margin-bottom: 20px;
+      border: 0;
+      border-radius: 7px;
+      box-shadow: 0px 2px 4px 1px rgba(186, 126, 194, 0.86);
+          -webkit-box-shadow: 0px 2px 4px 1px rgba(186, 126, 194, 0.86);
+          -moz-box-shadow: 0px 2px 4px 1px rgba(186, 126, 194, 0.86);
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      line-height: 1.5;
+      text-decoration: none;
+      background-image: $button-bgd-color;
+      color: $button-text-color;
+
+      @include media('within', 'mobile'){
+        margin-right: auto;
+      }
     }
 
-    &__button-link {
-        text-decoration: none;
+    &__content{
+      @include media('min', 'tablet'){
+        display: flex;
+        justify-content: space-around;
+      }
+
+      @include media('min', 'descktop'){
+        justify-content: space-between;
+      }
     }
 }  
 

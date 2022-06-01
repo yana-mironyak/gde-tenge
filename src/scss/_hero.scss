@@ -15,5 +15,9 @@
 
     padding-bottom: 10px;
     border-bottom: 2px solid $primary-border-color;
+
+    @include media('min', 'tablet'){
+      font-size: 23px;
+    }
   }
 }
