@@ -6,9 +6,9 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --dist-dir build --public-url /gde-tenge/",
-    "dev": "parcel build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build --dist-dir github --public-url /gde-tenge/",
+    "product": "parcel build --dist-dir product",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,6 @@
   "homepage": "https://yana-mironyak.github.io/gde-tenge/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "@parcel/transformer-sass": "^2.5.0",
     "gh-pages": "^4.0.0",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
