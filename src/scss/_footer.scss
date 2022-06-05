@@ -7,7 +7,7 @@
       color: $primary-text-color;
       border-top: 4px solid $accent-text-color;
       padding-top: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 25px;
 
       @include media('min', 'tablet'){
         display: flex;
@@ -43,7 +43,7 @@
       }
 
       @include media('min', 'tablet'){
-        padding-top: 30px;
+        padding-top: 15px;
 
         text-align: center;
       }

@@ -14,7 +14,11 @@ h1, h2, h3, p {
 img {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-width: 250px;
+
+  @include media('min', 'tablet') {
+    max-width: 221px;
+  }
 }
 
 ul {

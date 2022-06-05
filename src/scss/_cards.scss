@@ -10,6 +10,10 @@
 
     &__sub-body{
       flex-grow: 1;
+
+      @include media('min', 'descktop') {
+        margin-left: 20px;
+      }
     }
 
     &__item {
